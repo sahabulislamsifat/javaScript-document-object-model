@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Counter By AddEventListener</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main>
+      <section class="justify-center items-center h-screen flex">
+        <div id="counter-main" class="card p-4">
+          <p class="p-1 bg-black text-white mb-5 border">
+            Counter: <span id="digits">0</span>
+          </p>
+          <!-- <div class="flex space-x-3">
+            <button
+              onclick="increaseCount()"
+              class="increase-button bg-green-600 cursor-pointer px-2 text-white"
+            >
+              Increase [+]
+            </button>
+            <button
+              onclick="decreaseCount()"
+              class="decrease-button cursor-pointer bg-red-500 px-2 text-white"
+            >
+              Decrease [-]
+            </button>
+          </div> -->
+          <div class="flex space-x-3">
+            <button
+              class="increase-button bg-green-600 cursor-pointer px-2 text-white"
+            >
+              Increase [+]
+            </button>
+            <button
+              class="decrease-button cursor-pointer bg-red-500 px-2 text-white"
+            >
+              Decrease [-]
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/simpleCounter.js"></script>
+  </body>
+</html>
